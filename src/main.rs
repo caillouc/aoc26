@@ -2,6 +2,7 @@ use std::env;
 use std::fs;
 
 mod day1;
+mod day2;
 mod utils;
 
 fn main() {
@@ -18,6 +19,7 @@ fn main() {
 
     match day.as_str() {
         "day1" => day1::solve(data),
+        "day2" => day2::solve(data),
         day => println!("Invalid day {}", day),
     }
 }
